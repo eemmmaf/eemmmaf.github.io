@@ -50,45 +50,87 @@
         </nav>
 
     </header>
+
+    <!--Container-->
     <div class="container mt-10 px-4 max-w-5xl">
-        <h1 class="text-6xl text-center sm:text-left">Publicering</h1>
-        <p class="mt-4">Den publicerings-plattform jag har valt att använda är Netlify. Netlify har jag endast enstaka
-            gånger
-            förut. Anledningen till att jag ville testa det igen är för att det var smidigt och för jag var intresserad
-            av att ta reda på mer information om publiceringsverktyget.</p>
+        <h1 class="text-5xl text-center sm:text-left">Publicering</h1>
+        <p class="mt-4">Den publicerings-plattform jag har valt att använda är Github Pages. Jag har aldrig tidigare
+            testat den publiceringsplattformen. Den enda publiceringsplattformen jag har testat innan är Netlify,
+            bortsett från
+            publiceringsplattformar som är baserad på FTP/SFTP.</p>
         <article class="mt-4">
             <h2 class="text-4xl">Om verktyget</h2>
-            <p class="mt-2">Det finns flera olika sätt att publicera en webbplats med Netlify. Det går både att
-                publicera med hjälp av Git & Github och genom ett "dra och släppa"-verktyg. </p>
+            <p class="mt-2"> Github Pages är en publiceringsplattform som gör det möjligt att publicera en webbplats
+                direkt från ens Github-repository. Det går att ladda upp statiska sidor med HTML, CSS och JavaScript.
+                Alla sidor som är skapade efter 2016-06-15 och har domänen github.io använder HTTPS. </p><br>
+
+            <a href="https://pages.github.com/" class="underline decoration-2 hover:font-semibold">Länk till
+                publiceringsverktyget</a>
             <h3 class="text-2xl mt-4">Stöd för programmeringsspråk</h3>
-            <p class="mt-2">sfkasopfksop</p>
+            <p class="mt-2">HTML, CSS och JavaScript</p>
         </article>
+
+
         <!--Priser-->
-        <article class="mt-4">
+        <article class="mt-8">
             <h2 class="text-4xl text-center">Priser</h2>
+            <p class="text-center mt-2">Att ladda upp en webbplats via Github Pages är gratis. Det finns däremot olika
+                pris-planer för Github där mer funktioner ingår i de planerna som kostar. Jag använder versionen som är
+                gratis och kunde utan problem ladda upp en webbplats via Github Pages. </p>
             <div class="flex justify-around mt-4 flex-wrap gap-3">
                 <div class="bg-grey shadow-lg px-4 py-4 w-52 text-center">
-                    <h3 class="text-2xl">Starter</h3>
+                    <h3 class="text-2xl">Free</h3>
                     <p class="font-bold">Gratis</p>
-                    <p>Passar bra för personliga projekt, hobby och experimenterande.</p>
                 </div>
                 <div class="w-52 text-center px-4 py-4 shadow-lg ">
-                    <h3 class="text-2xl">Pro</h3>
-                    <p class="font-bold">$19 per medlem/månad</p>
-                    <p>Innehåller mer advancerade funktioner och stöd.</p>
+                    <h3 class="text-2xl">Team</h3>
+                    <p class="font-bold">$44 per användare/år</p>
                 </div>
                 <div class="bg-grey shadow-lg px-4 py-4 w-52 text-center">
-                    <h3 class="text-2xl">Business</h3>
-                    <p class="font-bold">$99 per medlem/månad</p>
-                    <p>Passar för större team och samarbete.</p>
-                </div>
-                <div class="w-52 text-center px-4 py-4 shadow-lg ">
                     <h3 class="text-2xl">Enterprise</h3>
-                    <p class="font-bold">Anpassat pris</p>
-                    <p>En plan som går att anpassa och skräddarsy efter önskan.</p>
+                    <p class="font-bold">$231 per användare/år</p>
                 </div>
             </div>
         </article>
+
+
+        <article>
+            <h2 class="text-4xl text-center mt-10">Mina åsikter</h2>
+            <div class="flex flex-col md:flex-row gap-2">
+                <div class="shadow-lg bg-white px-5 py-4">
+                    <h3 class="text-2xl mt-2">Fördelar</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Det är gratis att använda</li>
+                            <li>Det går att redigera koden direkt från Github, vilket gör det smidigt om man vill ändra
+                                något
+                                snabbt
+                            </li>
+                            <li>Obegränsat antal sidor för projekt-sidor</li>
+                            <li>Det finns bra guider som Github erbjuder</li>
+                            <li>Github erbjuder Jekyll, en generator som kan generera en statisk webbplats. Det har jag
+                                inte hunnit testa än dock. </li>
+                        </ul>
+                </div>
+                <div class="shadow-lg bg-white px-5 py-4">
+                    <h3 class="text-2xl mt-2">Nackdelar</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Det är ej tillåtet att använda för att driva ens online-företag.</li>
+                            <li>Begränsad storlek på webbplatserna. En webbplats får inte vara större än 1GB.</li>
+                            <li>Begränsad bandbreddsgräns på 100 GB/månad</li>
+                            <li>Endast en site per användare</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="mt-4">
+                <h2 class="text-4xl py-4">Använda Github Pages</h2>
+                <p>För att använda mig av Github Pages har jag först skapat ett repository med mitt Github-användarnamn.
+                    Sedan har jag klonat det repot till min dator. Efter det skapade jag en index.html-fil. Till sist
+                    användes kommandona git add, git commit och git push för att lägga till det i repot.
+                </p>
+            </div>
+
+        </article>
+
 
     </div>
 

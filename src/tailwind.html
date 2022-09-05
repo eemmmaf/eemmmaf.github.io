@@ -57,7 +57,8 @@
             ramverkets webbplats att hans kod har gått från att skrivas väldigt semantiskt till att skrivas
             funktionellt, "functional CSS". Med Tailwind skrivs klasserna direkt i HTML-koden och det finns
             förutbestämda klasser som går att använda, istället för att skapa klasserna själv i en CSS-fil. </p> <br>
-            <a href="https://tailwindcss.com/" class="underline decoration-2 hover:font-semibold">Länk till ramverkets webbplats</a>
+        <a href="https://tailwindcss.com/" class="underline decoration-2 hover:font-semibold">Länk till ramverkets
+            webbplats</a>
         <h2 class="text-4xl mt-5 text-center sm:text-left">Fördelar enligt Tailwind</h2>
         <ul class="mt-2">
             <li>- Tid sparas eftersom att användaren inte behöver fundera ut klassnamn. </li>
@@ -111,7 +112,7 @@
 
 
         <!--TABELL-->
-        <div class="mt-10">
+        <div class="mt-10 overflow-auto">
             <h2 class="text-4xl mt-5 text-center sm:text-left">Länder jag varit i</h2>
             <table class="table-auto border-collapse border-solid border-2 border-light-pink mt-5">
                 <thead class="bg-dark-pink text-white">
@@ -123,6 +124,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!--Ny rad-->
                     <tr>
                         <td class="border-solid border-2 border-light-pink">Emma</td>
                         <td class="border-solid border-2 border-light-pink">Materialize</td>
@@ -131,43 +133,40 @@
                             responsivt
                         </td>
                     </tr>
+                    <!--Ny rad-->
                     <tr>
-                        <td class="border-solid border-2 border-light-pink">Turkiet</td>
-                        <td class="border-solid border-2 border-light-pink">Asien</td>
-                        <td class="border-solid border-2 border-light-pink">3</td>
-                        <td class="border-solid border-2 border-light-pink">Varmt och skönt. Upplevt regn och åska. En
-                            gång upplevt en
-                            jordbävning i Bodrum</td>
+                        <td class="border-solid border-2 border-light-pink">Emmsan</td>
+                        <td class="border-solid border-2 border-light-pink">Tailwind</td>
+                        <td class="border-solid border-2 border-light-pink">Lätt,Medium</td>
+                        <td class="border-solid border-2 border-light-pink">Lite svårare att komma igång med än andra
+                            ramverk, men ger mig som utvecklare stor frihet</td>
                     </tr>
+                    <!--Ny rad-->
                     <tr>
-                        <td class="border-solid border-2 border-light-pink">Holland</td>
-                        <td class="border-solid border-2 border-light-pink">Europa</td>
-                        <td class="border-solid border-2 border-light-pink">1</td>
-                        <td class="border-solid border-2 border-light-pink">Var där i maj och då var det väldigt varmt.
+                        <td class="border-solid border-2 border-light-pink">Jonathan</td>
+                        <td class="border-solid border-2 border-light-pink">Bootstrap</td>
+                        <td class="border-solid border-2 border-light-pink">Medium</td>
+                        <td class="border-solid border-2 border-light-pink">Använt Bootstrap länge och kan inte tänka mig något annat ramverk
                         </td>
                     </tr>
                     <tr>
-                        <td class="border-solid border-2 border-light-pink">Thailand</td>
-                        <td class="border-solid border-2 border-light-pink">Asien</td>
-                        <td class="border-solid border-2 border-light-pink">1</td>
-                        <td class="border-solid border-2 border-light-pink">Otroligt varmt under den svenska vintern.
+                        <td class="border-solid border-2 border-light-pink">Felicia</td>
+                        <td class="border-solid border-2 border-light-pink">Milligram</td>
+                        <td class="border-solid border-2 border-light-pink">Lätt</td>
+                        <td class="border-solid border-2 border-light-pink">Lätt att komma igång med och trevlig att använda
                         </td>
                     </tr>
                     <tr>
-                        <td class="border-solid border-2 border-light-pink">Malaysia</td>
-                        <td class="border-solid border-2 border-light-pink">Asien</td>
-                        <td class="border-solid border-2 border-light-pink">1</td>
-                        <td class="border-solid border-2 border-light-pink">Samma som Thailand. Vääldigt varmt och
-                            skönt!</td>
+                        <td class="border-solid border-2 border-light-pink">Johanna</td>
+                        <td class="border-solid border-2 border-light-pink">UIkit</td>
+                        <td class="border-solid border-2 border-light-pink">Lätt</td>
+                        <td class="border-solid border-2 border-light-pink">Finns inget som jag ogillar med ramverket. Det innehåller allt man kan behöva för ett front-end ramverk.</td>
                     </tr>
                     <tr>
-                        <td class="border-solid border-2 border-light-pink">England</td>
-                        <td class="border-solid border-2 border-light-pink">Europa</td>
-                        <td class="border-solid border-2 border-light-pink">3</td>
-                        <td class="border-solid border-2 border-light-pink">Varit i London i maj alla gånger. Blandat
-                            väder som
-                            påminner om
-                            Sverige, lite varmare.</td>
+                        <td class="border-solid border-2 border-light-pink">Anton</td>
+                        <td class="border-solid border-2 border-light-pink">Bulma</td>
+                        <td class="border-solid border-2 border-light-pink">Medium,svårt</td>
+                        <td class="border-solid border-2 border-light-pink">Perfekt för mina projekt och lätt att använda.</td>
                     </tr>
                 </tbody>
             </table>
@@ -187,7 +186,7 @@
                 <div class="">
                     <!--SELECT med endast ett val-->
                     <label for="ramverk">Välj ramverk:</label>
-                    <select class="border-solid border border-dark-color shadow-sm w-full" name="ramverk">
+                    <select class="border-solid border border-dark-color shadow-sm w-full" name="ramverk" id="ramverk">
                         <option value="">Välj ramverk</option>
                         <option value="materialize">Materialize</option>
                         <option value="tailwind">Tailwind</option>
