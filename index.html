@@ -1,3 +1,118 @@
-��H�e�l�l�o� �W�o�r�l�d�
-�Helloooo
-�
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DT193G - Moment 1</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Ikoner -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper pink darken-2">
+            <a href="index.html" class="brand-logo">DT193G</a>
+            <div class="right"><a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+            </div>
+            <ul class="right hide-on-med-and-down">
+                <li class="active"><a href="index.html">Startsida</a></li>
+                <li><a href="materialize.html">Materialize</a></li>
+                <li><a href="src/tailwind.html">Tailwind</a></li>
+                <li><a href="src/publicering.html">Publicering</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav pink lighten-5" id="mobile-demo">
+        <li class="active"><a href="index.html">Startsida</a></li>
+        <li><a href="materialize.html">Materialize</a></li>
+        <li><a href="src/tailwind.html">Bulma</a></li>
+        <li><a href="src/publicering.html">Publicering</a></li>
+    </ul>
+
+    <!--Container med allt innehåll-->
+    <div class="container">
+
+        <h1>DT193G - Moment 1</h1>
+        <p>Denna uppgift ingår i kursen ”Fullstacks-utveckling med ramverk”. Syftet med uppgiften är att utvärdera och
+            använda olika CSS-ramverk för webbutveckling. Vi ska också utvärdera och använda publiceringsmetoder som
+            inte är FTP-baserade. </p>
+        <blockquote>Det huvudsakliga syftet med uppgiften är att få en överblick av CSS-ramverk, för att sedan kunna
+            fördjupa
+            sig i ett av dessa i den kommande projektuppgiften.</blockquote>
+
+        <!--Ramverk som använts-->
+        <h2 class="pink-text text-darken-4">Ramverk som använts</h2>
+        <div class="row">
+            <div class="col m6 s12">
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Materialize
+                        </div>
+                        <div class="collapsible-body"><span>Ett av ramverken som jag har valt att arbeta med är
+                                Materialize. Ramverket är skapat och designat av Google.
+                                Materialize kombinerar principerna för en klassisk design med nyheter och teknologi.
+                                Googles mål med Materialize är att utveckla ett designsystem som ger användaren en
+                                enhetlig upplevelse på
+                                alla olika plattformar. <br><br>
+                                <a href="https://materializecss.com/">Länk till ramverkets webbplats</a></span></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col m6 s12">
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Tailwind</div>
+                        <div class="collapsible-body"><span>Jag har testat på ramverket Tailwind. Tailwind gör det
+                                möjligt att snabbt bygga en modern webbplats, utan att behöva skapa css-kod utanför
+                                HTML-filen. Tailwinds skapare, Adam Wathan, skriver på ramverkets webbplats att hans kod
+                                har gått från att skrivas väldigt semantiskt till att skrivas funktionellt, "functional
+                                CSS". Med Tailwind skrivs klasserna direkt i HTML-koden och det finns förutbestämda
+                                klasser som går att använda, istället för att skapa klasserna själv i en CSS-fil. <br><br>
+                            <a href="https://tailwindcss.com/">Länk till ramverkets webbplats</a></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <footer class="page-footer pink darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">DT193G - Moment 1</h5>
+                    <p class="grey-text text-lighten-4">CSS-ramverk & publicerings-plattformar </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Startsida</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Materialize</a></li>
+                        <li><a class="grey-text text-lighten-3" href="src/tailwind.html">Tailwind</a></li>
+                        <li><a class="grey-text text-lighten-3" href="publicering.html">Publicering</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center">
+                © 2022 Emma Forslund - emfo2102@student.miun.se
+            </div>
+        </div>
+    </footer>
+    <script src="js/materialize.js"></script>
+</body>
+
+</html>

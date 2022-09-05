@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DT193G - Moment 1</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Ikoner -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Egen CSS-->
+    <link rel="stylesheet" href="materializecss.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper pink darken-2">
+            <a href="index.html" class="brand-logo">DT193G</a>
+            <div class="right"><a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+            </div>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Startsida</a></li>
+                <li class="active"><a href="materialize.html">Materialize</a></li>
+                <li><a href="src/tailwind.html">Tailwind</a></li>
+                <li><a href="src/publicering.html">Publicering</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav pink lighten-5" id="mobile-demo">
+        <li><a href="index.html">Startsida</a></li>
+        <li class="active"><a href="materialize.html">Materialize</a></li>
+        <li><a href="src/tailwind.html">Tailwind</a></li>
+        <li><a href="src/publicering.html">Publicering</a></li>
+    </ul>
+
+    <!--Container med allt innehåll-->
+    <div class="container">
+
+        <h1>Materialize</h1>
+        <p>Ett av ramverken som jag har valt att arbeta med är Materialize. Ramverket är skapat och designat av Google.
+            Materialize kombinerar principerna för en klassisk design med nyheter och teknologi.
+            Googles mål med Materialize är att utveckla ett designsystem som ger användaren en enhetlig upplevelse på
+            alla olika plattformar.
+            <br><br>
+            <a href="https://materializecss.com/">Länk till ramverkets webbplats</a>
+        </p>
+        <h2 class="pink-text text-darken-4">
+            Fördelar enligt Materialize:
+        </h2>
+        <ul class="collection">
+            <li class="collection-item"><i class="material-icons">thumb_up</i> Lätt att arbeta med, tack vare den stora
+                dokumentationen med specifika
+                kodexempel</li>
+            <li class="collection-item"><i class="material-icons">thumb_up</i> Gör utvecklingen snabbare, tack vare all
+                "default" style som redan finns</li>
+            <li class="collection-item"><i class="material-icons">thumb_up</i> Fokuserar på användarupplevelse. </li>
+        </ul>
+
+
+        <!-- FÖRDELAR OCH NACKDELAR -->
+        <div class="row">
+            <h2 class="pink-text text-darken-4">Min reflektion</h2>
+            <div class="col s12 m6 green lighten-5 z-depth-1">
+                <h3 class="center-align">Fördelar <i class="material-icons">mood</i></h3>
+                <ul class="browser-default">
+                    <li>
+                        Smidigt grid-system som är lätt att lära sig.
+                    </li>
+                    <li>
+                        Väldigt bra kodexempel och bra dokumentation. Det är väldigt lätt att snabbt bygga upp en
+                        responsiv design som ser bra ut, även för nybörjare.
+                    </li>
+                    <li>
+                        Stort utbud av basfärger, till skillnad från andra ramverk jag testat. Går att välja en
+                        basfärg
+                        och lägga till darken och lighten för att anpassa färgen. Många andra ramverk erbjuder
+                        endast
+                        ett fåtal basfärger, utan möjlighet att göra de ljusare och mörkare.
+                    </li>
+                    <li>
+                        Snabbt att komma igång genom att använda CDN. Tack vare det bra utbudet av basfärger nöjde
+                        jag
+                        mig med att använda CDN-länkar.
+                    </li>
+                    <li>
+                        Bra komponenter. Väldigt lätt att skapa en responsiv navigering med väldigt många kodexempel
+                        på
+                        olika typer av navigeringar.
+                    </li>
+                </ul>
+            </div>
+            <div class="col s12 m6 pink lighten-5 z-depth-1">
+                <h3 class="center-align">Nackdelar <i class="material-icons">sentiment_very_dissatisfied</i></h3>
+                <ul class="browser-default">
+                    <li>
+                        Ganska begränsat kring hur element ska stylas. Allt går inte att styla som man vill, utan
+                        att
+                        behöva skriva egen CSS-kod. Jag tror att det är lätt att webbplatser blir ganska lika
+                        varandra
+                        om man alltid använder Materialize. Det behöver dock inte vara något dåligt.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="divider"></div>
+
+        <!-- Tabell -->
+        <h2 class="pink-text text-darken-4 center-align">Studenters favorit-ramverk</h2>
+        <table class="striped responsive-table">
+            <!--THEAD-->
+            <thead>
+                <tr>
+                    <th>Namn</th>
+                    <th>Ramverk</th>
+                    <th>Svårighetsgrad</th>
+                    <th>Motivering</th>
+                </tr>
+            </thead>
+
+            <!--TBODY-->
+            <tbody>
+                <tr>
+                    <td>Emma</td>
+                    <td>Materialize</td>
+                    <td>Lätt</td>
+                    <td>Bra komponenter, bra dokumentation, responsivt</td>
+                </tr>
+                <tr>
+                    <td>Emmsan</td>
+                    <td>Tailwind</td>
+                    <td>Lätt,Medium</td>
+                    <td>Lite svårare att komma igång med än andra ramverk, men ger mig som utvecklare stor frihet</td>
+                </tr>
+                <tr>
+                    <td>Jonathan</td>
+                    <td>Bootstrap</td>
+                    <td>Medium</td>
+                    <td>Använt Bootstrap länge och kan inte tänka mig något annat ramverk</td>
+                </tr>
+                <tr>
+                    <td>Felicia</td>
+                    <td>Milligram</td>
+                    <td>Lätt</td>
+                    <td>Lätt att komma igång med och trevlig att använda</td>
+                </tr>
+                <tr>
+                    <td>Johanna</td>
+                    <td>UIkit</td>
+                    <td>Lätt</td>
+                    <td>Finns inget som jag ogillar med ramverket. Det innehåller allt man kan behöva för ett front-end
+                        ramverk.</td>
+                </tr>
+                <tr>
+                    <td>Anton</td>
+                    <td>Bulma</td>
+                    <td>Medium,Svårt</td>
+                    <td>Perfekt för mina projekt och lätt att använda.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- FORMULÄR -->
+        <h2 class="pink-text text-darken-4 center-align">Lägg till ditt favorit-ramverk</h2>
+        <form class="col s12">
+            <div class="row">
+                <!-- INPUT namn -->
+                <div class="input-field col s12 m6">
+                    <input placeholder="Ditt namn" id="name" type="text" class="validate">
+                    <label for="name">Namn</label>
+                </div>
+                <!--SELECT med endast ett val-->
+                <div class="input-field col s12 m6">
+                    <select>
+                        <option value="" disabled selected>Välj ramverk</option>
+                        <option value="materialize">Materialize</option>
+                        <option value="tailwind">Tailwind</option>
+                        <option value="bootstrap">Bootstrap</option>
+                        <option value="milligram">Milligram</option>
+                        <option value="uikit">UIkit</option>
+                        <option value="bulma">Bulma</option>
+                    </select>
+                    <label>Ditt favorit-ramverk</label>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <!--Textarea-->
+                <div class="input-field col s12 m8">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Kommentar</label>
+                </div>
+                <!-- CHECKBOX -->
+                <div class="col s12 m4">
+                    <h3 class="form-h3">Svårighetsgrad</h3>
+                    <label for="easy">
+                        <input type="checkbox" id="easy" name="easy" />
+                        <span>Lätt</span>
+                    </label>
+                    <br>
+                    <label for="medium">
+                        <input type="checkbox" id="medium" name="medium" />
+                        <span>Medium</span>
+                    </label>
+                    <br>
+                    <label for="hard">
+                        <input type="checkbox" id="hard" name="hard" />
+                        <span>Svårt</span>
+                    </label>
+                </div>
+            </div>
+            <button class="btn waves-effect green lighten-3 grey-text text-darken-4" type="submit" name="action">Skicka
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
+        <!--Slut på fomulär-->
+    </div>
+
+
+    <!--Footer-->
+    <footer class="page-footer pink darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">DT193G - Moment 1</h5>
+                    <p class="grey-text text-lighten-4">CSS-ramverk & publicerings-plattformar </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Startsida</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Materialize</a></li>
+                        <li><a class="grey-text text-lighten-3" href="src/tailwind.html">Tailwind</a></li>
+                        <li><a class="grey-text text-lighten-3" href="publicering.html">Publicering</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center">
+                © 2022 Emma Forslund - emfo2102@student.miun.se
+            </div>
+        </div>
+    </footer>
+    <script src="js/materialize.js"></script>
+</body>
+
+</html>
