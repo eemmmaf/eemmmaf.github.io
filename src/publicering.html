@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Publicering</title>
+</head>
+
+<!--BODY-->
+
+<body>
+    <header class="bg-dark-pink">
+        <nav class="relative container mx-auto p-4">
+            <!-- Flex-container -->
+            <div class="flex items-end justify-between">
+                <!-- Loggan som länkar till startsidan -->
+                <div class="pt-2">
+                    <a href="index.html" class="text-4xl text-white">DT193G</a>
+                </div>
+                <!--Länkar i menyn. Göms för skärmar under medium-size-->
+                <div class="hidden md:flex space-x-6 self-center text-white">
+                    <a href="index.html" class="hover:text-slate-300">Startsidan</a>
+                    <a href="materialize.html" class="hover:text-slate-300">Materialize</a>
+                    <a href="src/tailwind.html" class="hover:text-slate-300">Tailwind</a>
+                    <a href="#" class="hover:text-slate-300">Publicering</a>
+                </div>
+
+                <!--Hamburger-ikonen-->
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <!--Meny för mobil-->
+            <div class="md:hidden">
+                <div id="menu"
+                    class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="index.html" class="hover:text-slate-300">Startsidan</a>
+                    <a href="materialize.html" class="hover:text-slate-300">Materialize</a>
+                    <a href="src/tailwind.html" class="hover:text-slate-300">Tailwind</a>
+                    <a href="#" class="hover:text-slate-300">Publicering</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <div class="container mt-10 px-4 max-w-5xl">
+        <h1 class="text-6xl text-center sm:text-left">Publicering</h1>
+        <p class="mt-4">Den publicerings-plattform jag har valt att använda är Netlify. Netlify har jag endast enstaka
+            gånger
+            förut. Anledningen till att jag ville testa det igen är för att det var smidigt och för jag var intresserad
+            av att ta reda på mer information om publiceringsverktyget.</p>
+        <article class="mt-4">
+            <h2 class="text-4xl">Om verktyget</h2>
+            <p class="mt-2">Det finns flera olika sätt att publicera en webbplats med Netlify. Det går både att
+                publicera med hjälp av Git & Github och genom ett "dra och släppa"-verktyg. </p>
+            <h3 class="text-2xl mt-4">Stöd för programmeringsspråk</h3>
+            <p class="mt-2">sfkasopfksop</p>
+        </article>
+        <!--Priser-->
+        <article class="mt-4">
+            <h2 class="text-4xl text-center">Priser</h2>
+            <div class="flex justify-around mt-4 flex-wrap gap-3">
+                <div class="bg-grey shadow-lg px-4 py-4 w-52 text-center">
+                    <h3 class="text-2xl">Starter</h3>
+                    <p class="font-bold">Gratis</p>
+                    <p>Passar bra för personliga projekt, hobby och experimenterande.</p>
+                </div>
+                <div class="w-52 text-center px-4 py-4 shadow-lg ">
+                    <h3 class="text-2xl">Pro</h3>
+                    <p class="font-bold">$19 per medlem/månad</p>
+                    <p>Innehåller mer advancerade funktioner och stöd.</p>
+                </div>
+                <div class="bg-grey shadow-lg px-4 py-4 w-52 text-center">
+                    <h3 class="text-2xl">Business</h3>
+                    <p class="font-bold">$99 per medlem/månad</p>
+                    <p>Passar för större team och samarbete.</p>
+                </div>
+                <div class="w-52 text-center px-4 py-4 shadow-lg ">
+                    <h3 class="text-2xl">Enterprise</h3>
+                    <p class="font-bold">Anpassat pris</p>
+                    <p>En plan som går att anpassa och skräddarsy efter önskan.</p>
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+
+    <!--FOOTER-->
+    <footer class="p-4 bg-dark-pink shadow md:flex md:items-center md:justify-between md:p-6 mt-5">
+        <span class="text-sm text-white sm:text-center">DT193G - Emma Forslund - emfo2102@student.miun.se
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm text-white">
+            <li>
+                <a href="index.html" class="mr-4 hover:underline md:mr-6 ">Startsida</a>
+            </li>
+            <li>
+                <a href="materialize.html" class="mr-4 hover:underline md:mr-6">Materialize</a>
+            </li>
+            <li>
+                <a href="src/tailwind.html" class="mr-4 hover:underline md:mr-6">Tailwind</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Publicering</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/tailwind.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Tailwind</title>
+</head>
+
+<!--BODY-->
+
+<body>
+    <header class="bg-dark-pink">
+        <nav class="relative container mx-auto p-4">
+            <!-- Flex-container -->
+            <div class="flex items-end justify-between">
+                <!-- Loggan som länkar till startsidan -->
+                <div class="pt-2">
+                    <a href="index.html" class="text-4xl text-white">DT193G</a>
+                </div>
+                <!--Länkar i menyn. Göms för skärmar under medium-size-->
+                <div class="hidden md:flex space-x-6 self-center text-white">
+                    <a href="index.html" class="hover:text-slate-300">Startsidan</a>
+                    <a href="materialize.html" class="hover:text-slate-300">Materialize</a>
+                    <a href="#" class="hover:text-slate-300">Tailwind</a>
+                    <a href="src/publicering.html" class="hover:text-slate-300">Publicering</a>
+                </div>
+
+                <!--Hamburger-ikonen-->
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <!--Meny för mobil-->
+            <div class="md:hidden">
+                <div id="menu"
+                    class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="index.html" class="hover:text-slate-300">Startsidan</a>
+                    <a href="materialize.html" class="hover:text-slate-300">Materialize</a>
+                    <a href="#" class="hover:text-slate-300">Tailwind</a>
+                    <a href="src/publicering.html" class="hover:text-slate-300">Publicering</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <div class="container mt-10 px-4 max-w-5xl">
+        <h1 class="text-6xl text-center sm:text-left">Tailwind</h1>
+        <p class="mt-2">Jag har testat på ramverket Tailwind. Tailwind gör det möjligt att snabbt bygga en modern
+            webbplats, utan att behöva skapa css-kod utanför HTML-filen. Tailwinds skapare, Adam Wathan, skriver på
+            ramverkets webbplats att hans kod har gått från att skrivas väldigt semantiskt till att skrivas
+            funktionellt, "functional CSS". Med Tailwind skrivs klasserna direkt i HTML-koden och det finns
+            förutbestämda klasser som går att använda, istället för att skapa klasserna själv i en CSS-fil. </p> <br>
+            <a href="https://tailwindcss.com/" class="underline decoration-2 hover:font-semibold">Länk till ramverkets webbplats</a>
+        <h2 class="text-4xl mt-5 text-center sm:text-left">Fördelar enligt Tailwind</h2>
+        <ul class="mt-2">
+            <li>- Tid sparas eftersom att användaren inte behöver fundera ut klassnamn. </li>
+            <li>- Vid traditionellt skapad CSS blir ens CSS-fil större varje gång en klass läggs till i dokumentet. Med
+                Tailwind är allting återanvändbart.</li>
+            <li>- Förändringar känns säkrare. Vid traditionellt skapad CSS är förändringarna i CSS-filerna globala och
+                det kan vara svårt att veta vad som förändras om något ändras där. Tailwind-klasserna i HTML-dokumentet
+                är lokala och vid en ändring ändras endast det elementet. </li>
+            <li>- Till skillnad mot att använda inline-style går det att använda pseudo-klasser, media quiries,
+                pseudo-element och attribut-selektorer på HTML-elementen. </li>
+            <li>- Det blir allt vanligare att skapa en style för dark-mode. Tailwind har gjort det enkelt att skapa en
+                mörkare version med hjälp av att använda "dark".</li>
+            <li>- Vid installering av Tailwind följer en config-fil med. I den går det att anpassa sitt tema, exempelvis
+                skapa ett färgtema eller brytpunkter. Det går också att lägga till plugins i den. </li>
+        </ul>
+
+        <!-- Fördelar och nackdelar enligt mig -->
+        <h2 class="text-4xl mt-5 text-center sm:text-left mb-4">Min reflektion</h2>
+        <div class="flex flex-col md:flex-row gap-2">
+            <div class="bg-dark-pink text-white shadow-lg px-2 py-1">
+                <h3 class="text-2xl mt-2 text-center">Fördelar</h3>
+                <ul class="list-disc list-inside">
+                    <li>Sparar tid genom att klasserna redan finns och det inte behövs skrivas någon CSS-kod.</li>
+                    <li>Väldigt anpassningsbart. Det går att anpassa och skapa sitt eget tema i tailwind-config-filen.
+                        Det kändes väldigt användbart att kunna skapa sitt egna färgtema. </li>
+                    <li>Slipper hoppa mellan HTML och CSS-filer för att skriva CSS-kod, eftersom att allt skrivs i
+                        HTML-dokumentet. </li>
+                    <li>Ingen CSS-kod skapas i onödan. När jag skapar CSS-kod på det traditionella sättet kan ibland
+                        klasser skapas i onödan och ta upp plats. Med Tailwind märker jag direkt om jag behöver stylen
+                        eller inte. </li>
+                    <li>"Mobile-first"-standard</li>
+                </ul>
+            </div>
+            <div class="bg-dark-purple text-white shadow-lg px-2 py-1">
+                <h3 class="text-2xl mt-2 text-center">Nackdelar</h3>
+                <ul class="list-disc list-inside">
+                    <li>Många nya klasser att lära sig. Det tar ett tag att lära sig de nya klasserna, även om jag
+                        anser att jag har bra kunskap om traditionell CSS. </li>
+                    <li>Lite krångligt att installera och konfigurera, till skillnad mot att använda CDN. Tailwind har
+                        dock väldigt bra dokumentation kring hur det ska installeras, så det går snabbt att komma igång
+                        om man är van vid liknande installationer. </li>
+                    <li>Vissa komponenter saknas. Jag var tvungen att använda ett plugin för formulär för att kunna
+                        styla formulär. </li>
+                    <li>Inte det bästa alternativet för personer som inte har erfarenhet av CSS. Jämfört med
+                        Materialize krävdes det mer läsning i dokumentationen för att förstå hur ramverket fungerar.
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <!--TABELL-->
+        <div class="mt-10">
+            <h2 class="text-4xl mt-5 text-center sm:text-left">Länder jag varit i</h2>
+            <table class="table-auto border-collapse border-solid border-2 border-light-pink mt-5">
+                <thead class="bg-dark-pink text-white">
+                    <tr>
+                        <th class="border border-light-pink">Namn</th>
+                        <th class="border border-light-pink">Ramverk</th>
+                        <th class="border border-light-pink">Svårighetsgrad</th>
+                        <th class="border border-light-pink">Motivering</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border-solid border-2 border-light-pink">Emma</td>
+                        <td class="border-solid border-2 border-light-pink">Materialize</td>
+                        <td class="border-solid border-2 border-light-pink">Lätt</td>
+                        <td class="border-solid border-2 border-light-pink">Bra komponenter, bra dokumentation,
+                            responsivt
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-solid border-2 border-light-pink">Turkiet</td>
+                        <td class="border-solid border-2 border-light-pink">Asien</td>
+                        <td class="border-solid border-2 border-light-pink">3</td>
+                        <td class="border-solid border-2 border-light-pink">Varmt och skönt. Upplevt regn och åska. En
+                            gång upplevt en
+                            jordbävning i Bodrum</td>
+                    </tr>
+                    <tr>
+                        <td class="border-solid border-2 border-light-pink">Holland</td>
+                        <td class="border-solid border-2 border-light-pink">Europa</td>
+                        <td class="border-solid border-2 border-light-pink">1</td>
+                        <td class="border-solid border-2 border-light-pink">Var där i maj och då var det väldigt varmt.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-solid border-2 border-light-pink">Thailand</td>
+                        <td class="border-solid border-2 border-light-pink">Asien</td>
+                        <td class="border-solid border-2 border-light-pink">1</td>
+                        <td class="border-solid border-2 border-light-pink">Otroligt varmt under den svenska vintern.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-solid border-2 border-light-pink">Malaysia</td>
+                        <td class="border-solid border-2 border-light-pink">Asien</td>
+                        <td class="border-solid border-2 border-light-pink">1</td>
+                        <td class="border-solid border-2 border-light-pink">Samma som Thailand. Vääldigt varmt och
+                            skönt!</td>
+                    </tr>
+                    <tr>
+                        <td class="border-solid border-2 border-light-pink">England</td>
+                        <td class="border-solid border-2 border-light-pink">Europa</td>
+                        <td class="border-solid border-2 border-light-pink">3</td>
+                        <td class="border-solid border-2 border-light-pink">Varit i London i maj alla gånger. Blandat
+                            väder som
+                            påminner om
+                            Sverige, lite varmare.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- FORMULÄR -->
+        <form class="shadow-lg py-4 px-5 bg-grey mt-10">
+            <h2 class="text-4xl mt-5 text-center sm:text-left mb-4">Lägg till ditt favorit-ramverk</h2>
+            <div class="md:grid grid-cols-2 gap-4">
+                <div class="">
+                    <!-- INPUT namn -->
+                    <label for="name">Namn:</label><br>
+                    <input id="name" type="text" class="border-solid border border-dark-color shadow-sm w-full">
+                    <br><br>
+                </div>
+
+                <div class="">
+                    <!--SELECT med endast ett val-->
+                    <label for="ramverk">Välj ramverk:</label>
+                    <select class="border-solid border border-dark-color shadow-sm w-full" name="ramverk">
+                        <option value="">Välj ramverk</option>
+                        <option value="materialize">Materialize</option>
+                        <option value="tailwind">Tailwind</option>
+                        <option value="bootstrap">Bootstrap</option>
+                        <option value="milligram">Milligram</option>
+                        <option value="uikit">UIkit</option>
+                        <option value="bulma">Bulma</option>
+                    </select><br><br>
+                </div>
+
+                <!--Textarea-->
+                <div>
+                    <label for="textarea1">Kommentar:</label><br>
+                    <textarea id="textarea1" class="border-solid border border-dark-color shadow-sm w-full"></textarea>
+                </div>
+
+                <!-- CHECKBOX -->
+                <div class="justify-self-center">
+                    <h3>Svårighetsgrad</h3>
+                    <label for="easy">
+                        <input type="checkbox" id="easy" name="easy" />
+                        <span>Lätt</span>
+                    </label>
+                    <br>
+                    <label for="medium">
+                        <input type="checkbox" id="medium" name="medium" />
+                        <span>Medium</span>
+                    </label>
+                    <br>
+                    <label for="hard">
+                        <input type="checkbox" id="hard" name="hard" />
+                        <span>Svårt</span>
+                    </label>
+                </div>
+
+                <!--Knapp-->
+                <button
+                    class="bg-dark-pink hover:bg-dark-purple text-white font-bold py-2 px-4 rounded shadow-sm mt-8 col-start-2 justify-self-end w-full md:w-3/12">
+                    Skicka
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="p-4 bg-dark-pink shadow md:flex md:items-center md:justify-between md:p-6 mt-5">
+        <span class="text-sm text-white sm:text-center">DT193G - Emma Forslund - emfo2102@student.miun.se
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm text-white">
+            <li>
+                <a href="index.html" class="mr-4 hover:underline md:mr-6 ">Startsida</a>
+            </li>
+            <li>
+                <a href="materialize.html" class="mr-4 hover:underline md:mr-6">Materialize</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Tailwind</a>
+            </li>
+            <li>
+                <a href="publicering.html" class="hover:underline">Publicering</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/tailwind.js"></script>
+</body>
+
+</html>
